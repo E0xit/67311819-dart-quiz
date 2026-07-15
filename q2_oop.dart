@@ -1,6 +1,4 @@
 //2.1
-import 'dart:async';
-
 abstract class MenuItem {
   final String name;
   final double basePrice;
