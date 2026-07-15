@@ -33,7 +33,7 @@ void main(List<String> args) {
   String? coupon;
   print('ความยาวคูปอง: ${coupon ?? 0}');
   coupon ??= 'NO-COUPON';
-  print('คูปองหลังกำหนดค่า: ${coupon ?? 0}');
+  print('คูปองหลังกำหนดค่า: ${coupon}');
 }
 
 double calTotal(int price, int qty, [double? discount]) {
