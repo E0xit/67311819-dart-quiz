@@ -38,8 +38,8 @@ class Food extends MenuItem {
 
 //2.4
 class Wallet {
-  double? _balance;
-  double get balance => this.balance;
+  double _balance = 300;
+  double get balance => _balance;
   set balance(double input) {
     if (input < 0) {
       print('ผิดพลาด: ยอดเงินติดลบไม่ได้');
@@ -50,8 +50,10 @@ class Wallet {
 
   bool pay(double baht) {
     if (baht > balance) {
+      print('ยอดเงินไม่พอ');
       return false;
     } else {
+      print('ชำระเงินสำเร็จ');
       balance -= baht;
       return true;
     }
