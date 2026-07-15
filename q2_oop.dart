@@ -77,4 +77,5 @@ void main(List<String> args) {
 
   //2.4
   Wallet().balance = -5;
+  Wallet().pay(sum);
 }
